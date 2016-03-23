@@ -1,0 +1,117 @@
+body {
+  font-family: 'Ek Mukta', sans-serif;
+  margin: 0;
+  padding: 10px;
+  font-size: 3em;
+  display: block;
+}
+
+#game-container {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto 0 auto;
+}
+
+.sonja {
+  color: #EF3929;
+  font-weight: 550;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.title {
+  background-color: #EF3929;
+  font-weight: 550;
+  color: #E6E4E6;
+}
+
+
+/*  Section styles*/
+#player-name {
+  display: inline-block;
+  width: 90%;
+} 
+
+
+.card { 
+  display: none;
+  width: 100%;
+}
+
+
+.button {
+  text-decoration: none;
+  background-color: white;
+  color: #ef3929;
+  border-radius: 5px;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 10px 5px;
+  min-width: 260px;
+  text-transform: uppercase;
+  border-style: none;
+}
+
+.button:visited{
+  background-color: #E6E4E6;
+}
+
+
+
+
+/*  Button styles*/
+ 
+
+.btn {
+  text-decoration: none;
+  background-color: #E6E4E6;
+  color: #ef3929;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 10px 5px;
+  min-width: 260px;
+  text-transform: uppercase;
+  border-style: none;
+}
+
+.btn:hover {
+  background-color: #ef3929;
+  color: #e6e4e6;
+}
+
+.battleground {
+  width: 100%;
+  height: 600px;
+  overflow: scroll;
+}
+
+
+.intro {
+  color: #ef3929
+}
+
+.turn {
+  color: #ef3929
+}
+
+.return {
+
+}
+
+.victory {
+  color: #ef3929
+}
+
+.loss {
+  color: #ef3929
+}
+
+
+
+
+
+

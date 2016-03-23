@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+  <head>
+    <meta charset="utf-8">
+    <title>Guantlet</title>
+    <link rel="stylesheet" type="text/css" href="styles/gauntlet.css">
+    <link href='https://fonts.googleapis.com/css?family=Ek+Mukta:400,800' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+    <article id="game-container">
+      
+      <section id="player-name" class="card card-name">
+        <div class="sonja">YOU ARE RED SONJA!</div>
+        <div><img src="photos/red-sonja-main.gif" width="500px"></div> 
+        <button value="select-a-class" class="btn card-link" next="card-class">CHOOSE A CLASS</button>
+      </section>
+
+
+      <section id="class-select" class="card card-class">
+        <div class="title">CHOOSE A CLASS</div>
+        <div class="classes">
+          <button class="button" value="Warrior">Warrior</button>
+          <button class="button" value="Valkyrie">Valkyrie</button>
+          <button class="button" value="Berserker">Berserker</button>
+          <button class="button" value="Monk">Monk</button>
+          <button class="button" value="Wizard">Wizard</button>
+          <button class="button" value="Sorcerer">Sorcerer</button>
+          <button class="button" value="Conjurer">Conjurer</button>
+          <button class="button" value="Shaman">Shaman</button>
+          <button class="button" value="Thief">Thief</button>
+          <button class="button" value="Ninja">Ninja</button>
+          <button class="button" value="Assassin">Assassin</button>
+          <button class="button" value="Unicorn">Surprise Me</button>
+        </div>
+        <button value="choose-your-weapon" class="btn card-link" next="card-weapon">CHOOSE YOUR WEAPON</button>
+      </section>
+
+      <section id="weapon-select" class="card card-weapon">
+        <div class="title">CHOOSE A WEAPON</div>
+        <button value="back" class="card-back btn" current="card-weapon" previous="card-class">BACK</button>
+        <div class="weapons card-prompt">
+          <button class="button" value="Dagger">Dagger</button>
+          <button class="button" value="BroadSword">Broad Sword</button>
+          <button class="button" value="WarAxe">War Axe</button>
+          <button class="button" value="Gloves">Gloves</button>
+          <button class="button" value="Staff">Staff</button>
+          <button class="button" value="CrystalBall">Crystal Ball</button>
+          <button class="button" value="Wand">Wand</button>
+          <button class="button" value="ShrunkenHead">Shrunken Head</button>
+          <button class="button" value="PoisonDart">Poison Dart</button>
+          <button class="button" value="Horn">Horn</button>
+        </div>
+        <button value="choose-your-enemy" class="btn card-link" next="card-enemy">CHOOSE YOUR ENEMY</button>
+      </section>
+      <section id="enemy-select" class="card card-enemy">
+        <div class="title">CHOOSE AN ENEMY</div>
+        <button value="back" class="card-back btn" current="card-enemy" previous="card-weapon">BACK</button>
+        <div class="enemies card-prompt">
+          <button class="button" value="Orc">Orc</button>
+          <button class="button" value="Queen">Queen</button>
+          <button class="button" value="Tuzun">Tuzun</button>
+          <button class="button" value="Andar">Andar</button>
+        </div>
+
+        <div class="card-button">
+          <button value="defeat-enemies" class="btn card-link defeat-enemies" current="card-enemy" next="card-battleground">DEFEAT YOUR ENEMY</button>
+        </div>
+      </section>
+
+      <section class="card card-battleground">
+        <div id="battle-buttons">
+          <button class="start btn">START</button>
+          <button class="attack btn">ATTACK</button>
+        </div>
+        <div class="battleground"></div>
+        <button value="back" class="card-back btn" current="card-battleground" previous="card-name">BACK TO BEGINNING</button>
+      </section>
+
+    </article>
+
+  <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script src="javascripts/player.js"></script>
+  <script src="javascripts/classes.js"></script>
+  <script src="javascripts/weapons.js"></script>
+  <script src="javascripts/spells.js"></script>
+  <script src="javascripts/enemies.js"></script>
+  <script src="javascripts/battleground.js"></script>
+  <script src="javascripts/app.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
